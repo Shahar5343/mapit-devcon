@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapit DevCon 2026 — The Next Layer of Spatial UI</title>
+  <meta name="description" content="Mapit DevCon — 23.11.2026, Ramat Gan. A half-day summit for developers, product managers and team leads building with the Mapit GIS SDK. RSVP now." />
+  <meta name="theme-color" content="#070D1D" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mapit DevCon — The Next Layer of Spatial UI" />
+  <meta property="og:description" content="23.11.2026 · Ramat Gan. Deep dives, roadmap and community for teams building on the Mapit GIS SDK." />
+  <meta property="og:image" content="assets/schedule.png" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/mapit-icon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Interactive map background (decorative) ============ -->
+  <div id="map-bg" class="map-bg" aria-hidden="true">
+    <div class="map-plane"></div>
+    <div class="map-vignette"></div>
+  </div>
+
+  <!-- ============ Navigation ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" id="brand-link" aria-label="Mapit DevCon home">
+        <img src="assets/mapit-icon.svg" alt="" width="28" height="33" />
+        <span class="brand__word">MAPIT<span class="brand__tag">DevCon</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#audience" id="nav-audience">Who it's for</a>
+        <a href="#schedule" id="nav-schedule">Agenda</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--sm btn--ghost nav__rsvp" id="rsvp-nav" href="https://forms.gle/bYnR851L3oR731bRA" target="_blank" rel="noopener">RSVP</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__stage" id="hero-stage">
+        <div class="hero__halo" aria-hidden="true"></div>
+        <svg class="hero__orbits" viewBox="0 0 400 400" aria-hidden="true">
+          <circle class="orbit orbit--1" cx="200" cy="200" r="150" />
+          <circle class="orbit orbit--2" cx="200" cy="200" r="185" />
+          <circle class="orbit-dot orbit-dot--1" cx="200" cy="50" r="4" />
+          <circle class="orbit-dot orbit-dot--2" cx="385" cy="200" r="3" />
+        </svg>
+        <img class="hero__icon" id="hero-icon" src="assets/mapit-icon.svg" alt="Mapit logo — a faceted blue map pin" width="164" height="192" />
+        <span class="hero__ground" aria-hidden="true"></span>
+      </div>
+
+      <p class="eyebrow hero__eyebrow"><span class="dot-live" aria-hidden="true"></span>23.11.2026 · Ramat Gan</p>
+
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__title-a">Mapit DevCon:</span>
+        <span class="hero__title-b">The Next Layer of Spatial&nbsp;UI</span>
+      </h1>
+
+      <div class="hero__cta">
+        <a class="btn btn--rsvp" id="rsvp-hero" href="https://forms.gle/bYnR851L3oR731bRA" target="_blank" rel="noopener">
+          <span>RSVP Now</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+
+      <ul class="hero__meta" aria-label="Event details">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Mon, 23 Nov 2026
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          09:30 – 13:00
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Shalishut Ramat Gan · Dolev Classroom
+        </li>
+      </ul>
+
+      <a class="scroll-cue" href="#audience" id="scroll-cue" aria-label="Scroll to content">
+        <span class="scroll-cue__mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ============ Audience ============ -->
+    <section class="section" id="audience" aria-labelledby="audience-title">
+      <header class="section__head reveal">
+        <p class="eyebrow">Who it's for</p>
+        <h2 id="audience-title">Built for every layer of your team</h2>
+        <p class="section__lede">A half-day summit for the people who ship with the Mapit GIS SDK — from the render loop to the roadmap.</p>
+      </header>
+
+      <div class="audience-grid">
+        <article class="card audience-card reveal" style="--i:0">
+          <div class="audience-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
+          </div>
+          <h3>Developers</h3>
+          <p>Rendering pipelines, layer performance and SDK integration patterns you can put to work the next morning.</p>
+        </article>
+
+        <article class="card audience-card reveal" style="--i:1">
+          <div class="audience-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></svg>
+          </div>
+          <h3>Product Managers</h3>
+          <p>How spatial UI shapes user journeys and feature adoption — and where the platform is heading next.</p>
+        </article>
+
+        <article class="card audience-card reveal" style="--i:2">
+          <div class="audience-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Team Leads</h3>
+          <p>Architecture choices, migration paths and scaling strategies for teams running Mapit in production.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Schedule ============ -->
+    <section class="section" id="schedule" aria-labelledby="schedule-title">
+      <header class="section__head reveal">
+        <p class="eyebrow">Agenda</p>
+        <h2 id="schedule-title">Plan your day</h2>
+        <p class="section__lede">The full timetable for the morning. Tap it to view full size.</p>
+      </header>
+
+      <div class="schedule">
+        <aside class="card schedule__facts reveal" aria-label="Event at a glance">
+          <dl class="facts">
+            <div class="facts__row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Date</dt>
+              <dd>Monday, 23 November 2026</dd>
+            </div>
+            <div class="facts__row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Time</dt>
+              <dd>09:30 – 13:00</dd>
+            </div>
+            <div class="facts__row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Venue</dt>
+              <dd>Shalishut Ramat Gan<br /><span class="muted">Dolev Classroom</span></dd>
+            </div>
+          </dl>
+
+          <div class="countdown" id="countdown" aria-live="off">
+            <p class="countdown__label">Doors open in</p>
+            <div class="countdown__grid">
+              <div><span id="cd-days">--</span><small>days</small></div>
+              <div><span id="cd-hours">--</span><small>hrs</small></div>
+              <div><span id="cd-mins">--</span><small>min</small></div>
+              <div><span id="cd-secs">--</span><small>sec</small></div>
+            </div>
+          </div>
+
+          <div class="schedule__actions">
+            <a class="btn btn--rsvp btn--block" id="rsvp-schedule" href="https://forms.gle/bYnR851L3oR731bRA" target="_blank" rel="noopener"><span>RSVP Now</span></a>
+            <a class="btn btn--ghost btn--block" id="add-calendar" target="_blank" rel="noopener"
+               href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mapit%20DevCon&amp;dates=20261123T073000Z%2F20261123T110000Z&amp;details=Mapit%20DevCon%20%E2%80%94%20The%20Next%20Layer%20of%20Spatial%20UI&amp;location=Shalishut%20Ramat%20Gan%2C%20Dolev%20Classroom">
+              Add to Google Calendar
+            </a>
+          </div>
+        </aside>
+
+        <figure class="schedule__frame reveal" id="schedule-frame">
+          <button type="button" class="schedule__zoom" id="schedule-open" aria-label="Open timetable full size">
+            <img src="assets/schedule.png" alt="Mapit Dev Conference timetable for 23.11.2026: doors open 09:30, talks at 10:00, 10:45, 11:45 and 12:30, break at 11:30, closing at 13:00." loading="lazy" decoding="async" />
+            <span class="schedule__hint">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              View full size
+            </span>
+          </button>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section final-cta" aria-labelledby="final-title">
+      <div class="card final-cta__card reveal">
+        <img src="assets/mapit-icon.svg" alt="" width="56" height="66" class="final-cta__icon" />
+        <h2 id="final-title">Claim your spot on the map.</h2>
+        <p class="section__lede">Seats are limited. 23.11.2026 · 09:30 · Ramat Gan.</p>
+        <a class="btn btn--rsvp" id="rsvp-footer" href="https://forms.gle/bYnR851L3oR731bRA" target="_blank" rel="noopener">
+          <span>RSVP Now</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="brand brand--sm" href="#top" id="footer-brand">
+        <img src="assets/mapit-icon.svg" alt="" width="22" height="26" />
+        <span class="brand__word">MAPIT<span class="brand__tag">DevCon</span></span>
+      </a>
+      <p class="muted">© 2026 Mapit · The Next Layer of Spatial UI</p>
+    </div>
+  </footer>
+
+  <!-- Schedule lightbox -->
+  <dialog class="lightbox" id="schedule-lightbox" aria-label="Event timetable">
+    <button type="button" class="lightbox__close" id="schedule-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <img src="assets/schedule.png" alt="Mapit Dev Conference timetable, full size." />
+  </dialog>
+
+  <script src="js/map-background.js" defer></script>
+  <script src="js/cursor.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

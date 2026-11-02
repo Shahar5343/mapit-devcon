@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Mapit DevCon — Design Tokens
+   Brand blues are sampled directly from the facet fills of assets/mapit-icon.svg:
+     #DAE5FF (ice highlight) · #B4C7EF (mist facet) · #6493F7 (azure facet) · #4D79D6 (cobalt facet)
+   Deeper shades are derived from the same hue family for surfaces & depth.
+   ========================================================================== */
+
+:root {
+  /* ---- Pin palette (from SVG) ---- */
+  --pin-ice: #DAE5FF;
+  --pin-mist: #B4C7EF;
+  --pin-azure: #6493F7;
+  --pin-cobalt: #4D79D6;
+  /* ---- Derived depth ---- */
+  --pin-deep: #2F56B0;
+  --pin-abyss: #1B2F66;
+
+  /* ---- Ink (surfaces) ---- */
+  --ink-950: #050914;
+  --ink-900: #070D1D;
+  --ink-800: #0B1328;
+  --ink-700: #101B36;
+  --ink-600: #16254A;
+
+  /* ---- Text ---- */
+  --text-1: #EEF3FF;
+  --text-2: #B4C7EF;
+  --text-3: #7D90BC;
+
+  /* ---- Lines & glass ---- */
+  --line: rgba(180, 199, 239, 0.12);
+  --line-strong: rgba(100, 147, 247, 0.38);
+  --glass: rgba(12, 21, 44, 0.58);
+  --glass-strong: rgba(15, 26, 52, 0.84);
+
+  /* ---- Glows ---- */
+  --glow-sm: 0 0 18px rgba(100, 147, 247, 0.35);
+  --glow-md: 0 0 36px rgba(100, 147, 247, 0.45);
+  --glow-lg: 0 0 90px rgba(100, 147, 247, 0.45);
+
+  /* ---- Gradients ---- */
+  --grad-pin: linear-gradient(135deg, #DAE5FF 0%, #B4C7EF 24%, #6493F7 55%, #4D79D6 80%, #2F56B0 100%);
+  --grad-cta: linear-gradient(135deg, #7DA6FB 0%, #6493F7 42%, #4D79D6 100%);
+  --grad-text: linear-gradient(100deg, #DAE5FF 0%, #B4C7EF 30%, #6493F7 65%, #8DB2FA 100%);
+
+  /* ---- Type ---- */
+  --font-display: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* ---- Shape ---- */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-io: cubic-bezier(0.7, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---- Layout ---- */
+  --nav-h: 76px;
+  --maxw: 1200px;
+  --gutter: clamp(20px, 4vw, 40px);
+}
