@@ -629,7 +629,8 @@ html[data-view="product"] .lens__thumb { transform: translateX(100%); }
 }
 .countdown__grid small { font-size: 11px; color: var(--text-3); letter-spacing: 0.1em; text-transform: uppercase; }
 
-.schedule__actions { display: grid; gap: 10px; }
+.schedule__actions { display: grid; gap: 10px; margin-top: 26px; }
+.hero .countdown { width: min(100%, 420px); margin: 32px auto 0; }
 
 /* glowing frame */
 .schedule__frame {
