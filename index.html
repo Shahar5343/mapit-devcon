@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mapit DevCon 2026 — The Next Layer of Spatial UI</title>
-  <meta name="description" content="Mapit DevCon — 23.11.2026, Ramat Gan. A half-day summit for developers, product managers and team leads building with the Mapit GIS SDK. RSVP now." />
+  <meta name="description" content="Mapit DevCon — 23.11.2026, Ramat Gan. A half-day summit for developers, product managers and team leads building with Mapit. RSVP now." />
   <meta name="theme-color" content="#070D1D" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Mapit DevCon — The Next Layer of Spatial UI" />
-  <meta property="og:description" content="23.11.2026 · Ramat Gan. Deep dives, roadmap and community for teams building on the Mapit GIS SDK." />
+  <meta property="og:description" content="23.11.2026 · Ramat Gan. Deep dives, roadmap and community for teams building with Mapit." />
   <meta property="og:image" content="assets/schedule.png" />
 
   <link rel="icon" type="image/svg+xml" href="assets/mapit-icon.svg" />
@@ -75,6 +75,16 @@
         <span class="hero__title-b">The Next Layer of Spatial&nbsp;UI</span>
       </h1>
 
+      <div class="countdown" id="countdown" aria-live="off">
+        <p class="countdown__label">Doors open in</p>
+        <div class="countdown__grid">
+          <div><span id="cd-days">--</span><small>days</small></div>
+          <div><span id="cd-hours">--</span><small>hrs</small></div>
+          <div><span id="cd-mins">--</span><small>min</small></div>
+          <div><span id="cd-secs">--</span><small>sec</small></div>
+        </div>
+      </div>
+
       <div class="hero__cta">
         <a class="btn btn--rsvp" id="rsvp-hero" href="https://forms.gle/bYnR851L3oR731bRA" target="_blank" rel="noopener">
           <span>RSVP Now</span>
@@ -107,7 +117,7 @@
       <header class="section__head reveal">
         <p class="eyebrow">Who it's for</p>
         <h2 id="audience-title">Built for every layer of your team</h2>
-        <p class="section__lede">A half-day summit for the people who ship with the Mapit GIS SDK — from the render loop to the roadmap.</p>
+        <p class="section__lede">A half-day summit for teams who ship with Mapit — from kicking off a project to the roadmap.</p>
       </header>
 
       <div class="audience-grid">
@@ -155,18 +165,7 @@
             </div>
           </dl>
 
-          <div class="countdown" id="countdown" aria-live="off">
-            <p class="countdown__label">Doors open in</p>
-            <div class="countdown__grid">
-              <div><span id="cd-days">--</span><small>days</small></div>
-              <div><span id="cd-hours">--</span><small>hrs</small></div>
-              <div><span id="cd-mins">--</span><small>min</small></div>
-              <div><span id="cd-secs">--</span><small>sec</small></div>
-            </div>
-          </div>
-
           <div class="schedule__actions">
-            <a class="btn btn--rsvp btn--block" id="rsvp-schedule" href="https://forms.gle/bYnR851L3oR731bRA" target="_blank" rel="noopener"><span>RSVP Now</span></a>
             <a class="btn btn--ghost btn--block" id="add-calendar" target="_blank" rel="noopener"
                href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mapit%20DevCon&amp;dates=20261123T073000Z%2F20261123T110000Z&amp;details=Mapit%20DevCon%20%E2%80%94%20The%20Next%20Layer%20of%20Spatial%20UI&amp;location=Shalishut%20Ramat%20Gan%2C%20Dolev%20Classroom">
               Add to Google Calendar

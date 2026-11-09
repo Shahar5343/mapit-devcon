@@ -629,7 +629,11 @@ html[data-view="product"] .lens__thumb { transform: translateX(100%); }
 }
 .countdown__grid small { font-size: 11px; color: var(--text-3); letter-spacing: 0.1em; text-transform: uppercase; }
 
-.schedule__actions { display: grid; gap: 10px; }
+.schedule__actions { display: grid; gap: 10px; margin-top: 26px; }
+.hero .countdown { width: min(100%, 540px); margin: 36px auto 0; padding: 24px; }
+.hero .countdown__label { font-size: 13px; margin-bottom: 16px; }
+.hero .countdown__grid span { font-size: 44px; }
+.hero .countdown__grid small { font-size: 12px; }
 
 /* glowing frame */
 .schedule__frame {
