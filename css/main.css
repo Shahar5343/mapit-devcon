@@ -1008,6 +1008,19 @@ html.js .reveal.is-in { opacity: 1; transform: none; }
   .lens__opt { padding: 8px 11px; font-size: 12px; }
   .lens__opt svg { display: none; }
   .hero__meta li { font-size: 13px; }
+
+  /* Compact hero so the RSVP button sits above the fold on phones */
+  .hero { padding-top: calc(var(--nav-h) + 8px); }
+  .hero__stage { width: 120px; margin-bottom: 6px; }
+  .hero__eyebrow { margin-bottom: 14px; font-size: 11px; padding: 8px 12px; }
+  .hero__title { font-size: clamp(30px, 8.6vw, 40px); }
+  .hero .countdown { margin-top: 18px; padding: 14px 16px; }
+  .hero .countdown__label { font-size: 11px; margin-bottom: 10px; }
+  .hero .countdown__grid span { font-size: 30px; }
+  .hero .countdown__grid small { font-size: 11px; }
+  .hero__cta { margin-top: 20px; }
+  .hero__cta .btn--rsvp { padding: 16px 34px; font-size: 17px; }
+  .hero__meta { margin-top: 24px; }
   .feed__hint { display: none; }
   .guess-form__row { flex-direction: column; align-items: stretch; }
   .btn--drop { width: 100%; }
